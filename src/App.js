@@ -3,6 +3,8 @@
 
 import React, { useState, useEffect } from "react";
 import Search from "./Components/Search"
+import Display from "./Components/Display"
+
 
 
 function App() {
@@ -70,8 +72,8 @@ function App() {
 
   return (
     <div className="App">
-      <Search handleSearch={handleCity} />
-      weather        
+      <Search className="" handleSearch={handleCity} />        
+      <Display weather = {data}/>
     </div>
   );
 }
