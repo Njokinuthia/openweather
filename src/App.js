@@ -15,47 +15,47 @@ function App() {
     "28d519b791ec96557c38884a192d1bc7";
   
   const data = {
-  "coord": {
-    "lon": -121.9358,
-      "lat": 37.7021
-  },
-  "weather": [
-    {
-      "id": 800,
-      "main": "Clear",
-      "description": "clear sky",
-      "icon": "01d"
-    }
-  ],
-    "base": "stations",
-      "main": {
-    "temp": 289.35,
-      "feels_like": 288.83,
-        "temp_min": 284.83,
-          "temp_max": 293.59,
-            "pressure": 1010,
-              "humidity": 69
-  },
-  "visibility": 10000,
-    "wind": {
-    "speed": 4.63,
-      "deg": 240
-  },
-  "clouds": {
-    "all": 0
-  },
-  "dt": 1655393554,
-    "sys": {
-    "type": 2,
-      "id": 2016191,
-        "country": "US",
-          "sunrise": 1655383539,
-            "sunset": 1655436683
-  },
-  "timezone": -25200,
-    "id": 5344157,
-      "name": "Dublin",
-        "cod": 200
+    "coord": {
+      "lon": -121.9358,
+        "lat": 37.7021
+    },
+    "weather": [
+      {
+        "id": 800,
+        "main": "Clear",
+        "description": "clear sky",
+        "icon": "01d"
+      }
+    ],
+      "base": "stations",
+        "main": {
+      "temp": 289.35,
+        "feels_like": 288.83,
+          "temp_min": 284.83,
+            "temp_max": 293.59,
+              "pressure": 1010,
+                "humidity": 69
+    },
+    "visibility": 10000,
+      "wind": {
+      "speed": 4.63,
+        "deg": 240
+    },
+    "clouds": {
+      "all": 0
+    },
+    "dt": 1655393554,
+      "sys": {
+      "type": 2,
+        "id": 2016191,
+          "country": "US",
+            "sunrise": 1655383539,
+              "sunset": 1655436683
+    },
+    "timezone": -25200,
+      "id": 5344157,
+        "name": "Dublin",
+          "cod": 200
 }
   // const city = "nairobi"
   // useEffect(() => {
@@ -72,8 +72,8 @@ function App() {
 
   return (
     <div className="App">
-      <Search className="" handleSearch={handleCity} />        
-      <Display weather = {data}/>
+      {/* <Search handleSearch={handleCity} />         */}
+      <Display handleSearch={handleCity} weather = {data}/>
     </div>
   );
 }

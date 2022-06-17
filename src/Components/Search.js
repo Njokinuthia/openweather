@@ -18,7 +18,7 @@ function Search({ handleSearch}) {
     <form className="formInput" onSubmit={handleSubmit}>
       <input
         type="text"
-        placeholder="Input a city..."
+        placeholder="Enter a city..."
         value={search}
         onChange={handleChange}
       required/>
